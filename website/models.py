@@ -8,3 +8,12 @@ class Customer(models.Model):
     
     def _str_(self):
         return self.name
+
+    
+class Product(models.Model):
+    name = models.CharField(max_length=200,null=True)
+    image = models.ImageField(null=True,blank=True)
+    description = models.CharField(max_length=400,null=True)
+    def _str_(self):
+        return self.name
+
