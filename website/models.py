@@ -16,4 +16,12 @@ class Product(models.Model):
     description = models.CharField(max_length=400,null=True)
     def _str_(self):
         return self.name
+    
+class Order(models.Model):
+    product = models.ForeignKey( Product,null=True, on_delete=models.SET_NULL)
+    customer = models.ForeignKey(Customer,null=True, on_delete=models.SET_NULL)
+    date_ordered = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=20,default= 'PENDING')
+    def _str_(self):
+        return self.name     
 
