@@ -1,0 +1,10 @@
+{% load static %} 
+Home
+{% if request.user.is_staff %}
+Add Product
+{% elif request.user.customer.id == None %}
+Login
+{% else %}
+Cart
+{% endif %}
+Hello, {{request.user}} {% if request.user.customer.id != None %} Logout {% endif %}
