@@ -7,8 +7,5 @@ Group Members:
 4.Arat Gouda : 10576455
 5.Bakare folashade Abisoye : 10609000
 
-Business case
-
-Hi there ...testing 
-
-testing now
+Business case:
+  This is an online ecommerce website for selling products
