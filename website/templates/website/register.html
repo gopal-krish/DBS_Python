@@ -1,13 +1,65 @@
-{% extends 'website/dependencies.html' %}
-{% load static%}
-{% block content %}
-<div class="container jumbotron">
-    <form method="POST" action="" >
-        {% csrf_token %}
-        {{form.as_p}}
-        {{customerform.as_p}} 
-       
-        <input class="btn btn-success" type="submit" value="Register Account">
-    </form>
-</div>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register form</title>
+</head>
+<body>
+<form>
+</form>
+<table>
+    <tr>
+        <td>
+            Name:
+        </td>
+        <td>
+            <input type="text" placeholder="Name" name="">
+        </td>
+    </tr>
+    <td>
+        Password :
+    </td>
+    <td>
+        <Input type="'Password" placeholder="Password" name="">
+    </td>
+    <tr>
+        <td>
+            Gender :
+            <td>
+        <Input type="radio" name="Gender">Male
+        <Input type="radio" name="Gender">Female
+    </td>
+    </tr>
+    <tr>
+        <td>
+            Email :
+        </td>
+        <td>
+            <Input type="mail" placeholder="Email" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Phone no:
+        </td>
+        <td>
+            <select>
+                <option>353</option>
+                <option>354</option>
+                <option>355</option>
+                <option>356</option>
+                <option>357</option>
+                <option>358</option>
+                <option>359</option>
+            </select>
+            <Input type="Phone" placeholder="12856*****" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <Input type="Submit" value="Submit" name="">
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
