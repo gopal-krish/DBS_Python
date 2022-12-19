@@ -9,3 +9,5 @@ Group Members:
 
 Business case:
   This is an online ecommerce website for selling products
+
+Read requiremnents.txt to see the computer requirements.
