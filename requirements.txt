@@ -1,0 +1,16 @@
+We require a working browser and python installed on your computer. 
+To install Django we need cmd/terminal and run the command 
+
+“ pip install Django ”
+
+Go to the cloned directory, make sure you are the folder or use " cd " command to move the directory.
+
+To run the project run the command in cmd or terminal
+" python manage.py runserver "
+
+If you are using Visual studio code we need few extensions 
+	Python
+	Live server
+	Dbsqlite
+	Html
+	CSS
